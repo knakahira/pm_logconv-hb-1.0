@@ -1269,8 +1269,7 @@ class LogConvert:
 				return None
 
 		except Exception, strerror:
-			pm_log.warn("get_nextlog: error occurred.")
-			pm_log.debug("get_nextlog: error occurred. [%s]" % strerror)
+			pm_log.warn("get_nextlog: error occurred. [%s]" % strerror)
 			statfile.clear_cstat()
 		return None
 
